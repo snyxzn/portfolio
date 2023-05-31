@@ -1,0 +1,427 @@
+body {
+
+background-color: black;
+
+}
+
+.foto-album img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.foto-album {
+
+    width: 250px;
+    height: 250px;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.509);
+    transition: transform .9s;
+    filter:  contrast(50%);
+    border-radius: 10px;
+   
+
+}
+
+.foto-album:hover {
+
+    transition-duration: 1s;
+    filter: contrast(130%) blur(0px);
+
+
+}
+
+.album {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::selection {
+    color: #ffffff;
+    background: #7d2ae8;
+}
+
+.view-modal,
+.popup {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+}
+
+
+
+.logo-header img {
+
+    width: 50px;
+    height: auto;
+   
+
+}
+
+.header-container {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.itens-header img {
+
+width: 30px;
+height: 32px;
+
+}
+
+.navbar {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-right: 9%;
+
+
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+header {
+
+    width: 100vw;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+.foto-1 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/responsividade.png);
+    background-position-x: 10%;
+    background-position-y: 20% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+
+}
+
+.foto-2 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/bootstrap.png);
+    background-position-x: 20%;
+    background-position-y: 20% ;
+    background-size: 250%;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+
+}
+
+.foto-3 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/zodiaco.png);
+    background-position-x: 20%;
+    background-position-y: 20% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+
+}
+
+.foto-4 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/crm.png);
+    background-position-x: 24%;
+    background-position-y: 68% ;
+    background-size: 240%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+
+.foto-5 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/tabuada.png);
+    background-position-x: 50%;
+    background-position-y: 60% ;
+    background-size: 400%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+
+.foto-6 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/relogiodois.png);
+    background-position-x: 50%;
+    background-position-y: 50% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-7 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/relogioum.png);
+    background-position-x: 50%;
+    background-position-y: 50% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-8 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/imc.png);
+    background-position-x: 30%;
+    background-position-y: 50% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-9 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/somadom.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 250%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-10 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/cronometro.png);
+    background-position-x: 5%;
+    background-position-y: 20% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-11 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/familia.png);
+    background-position-x: 5%;
+    background-position-y: 20% ;
+    background-size: 250%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-12 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/calculadora.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+
+.foto-13 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/tecnologia.png);
+    background-position-x: 40%;
+    background-position-y: 20% ;
+    background-size: 250%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+
+.foto-14 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/jogos.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 250%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-15 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/carrossel3d.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-16 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/landinpage.png);
+    background-position-x: 2%;
+    background-position-y: 20% ;
+    background-size: 300%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-17 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/paralaxe.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 250%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-18 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/hotsite.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-19 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/sistema.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-20 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/galeria.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-21 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/responsivo.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-22 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/album.png);
+    background-position-x: 50%;
+    background-position-y: 10% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-23 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/fakenews.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+.foto-24 {
+
+    width: 250px;
+    height: 250px;
+    background-image: url(p/kenthompson.png);
+    background-position-x: 50%;
+    background-position-y: 20% ;
+    background-size: 220%;
+    border-radius: 2px;
+    background-repeat: no-repeat; border-radius: 6px;
+
+}
+
+.dark-mode {
+
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+
+}
+
+button {
+
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+    
+    }
+
+ 

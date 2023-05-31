@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+     
+     <link rel="icon" href="https://t3.ftcdn.net/jpg/03/68/95/08/360_F_368950850_aMW6C9P5SV7udFGHWgz97fvgNVsnOvpp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="sobre.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim | Portfólio</title>
+</head>
+
+<body>
+    
+
+    <header>
+
+      <div class="container-menu">
+
+        <main class="navbar">
+
+            <div class="logo-header">
+
+            <a href="index.html"><img src="img/log.png" alt=""></a>
+</div>
+
+       <div class="itens-header">
+
+        <button id="toggle-mode"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg/2048px-Pok%C3%A9mon_Dark_Type_Icon.svg.png" alt="" width="40px" height="40px"></button>
+        <a href="index.html"><img src="img/home2.png" alt=""></a>
+        <a href="projetos.html"><img src="img/projetos2.png" alt=""></a>
+        
+            
+        <script>
+
+const toggleBtn = document.getElementById('toggle-mode');
+
+const body = document.body;
+
+
+toggleBtn.addEventListener('click', function(){ //função anonima que ira pegar uma classe css.
+
+    body.classList.toggle('dark-mode')
+
+
+
+})
+
+        </script>
+            
+</div>
+
+
+    </main>
+
+    </div>
+
+    <button class="view-modal">Contatos</button>
+    <div class="popup">
+      
+  
+      <div class="content">
+        <p class="texto">Minhas Redes Sociais</p>
+        <ul class="icons">
+          <a href="https://www.facebook.com/ricardo.rodriguesdasilva.56"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/snyxznn"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/nz_rick/"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5551992262705?text=Ol%C3%A1%2C+eu+vim+redirecionado+por+conta+do+seu+portf%C3%B3lio."><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:ricardoempg@gmail.com"><i class="fab fa-linkedin" style="color: #0e76a8;"></i></a>
+        </ul>
+        <p class="texto">Ou veja meu linktree</p>
+        <div class="field">
+          <i class="url-icon uil uil-link"></i>
+          <input type="text" readonly value="https://linktr.ee/ricdeveloper">
+          <button>Copiar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script>
+      const viewBtn = document.querySelector(".view-modal"),
+      popup = document.querySelector(".popup"),
+      close = popup.querySelector(".close"),
+      field = popup.querySelector(".field"),
+      input = field.querySelector("input"),
+      copy = field.querySelector("button");
+  
+      viewBtn.onclick = ()=>{
+        popup.classList.toggle("show");
+      }
+      close.onclick = ()=>{
+        viewBtn.click();
+      }
+  
+      copy.onclick = ()=>{
+        input.select(); //select input value
+        if(document.execCommand("copy")){ //if the selected text copy
+          field.classList.add("active");
+          copy.innerText = "Copied";
+          setTimeout(()=>{
+            window.getSelection().removeAllRanges(); //remove selection from document
+            field.classList.remove("active");
+            copy.innerText = "Copy";
+          }, 3000);
+        }
+      }
+    </script>
+  
+  
+  
+  
+  </div>
+
+</main>
+
+</div>
+
+</header>
+
+<main class="linha">
+
+    <h1>Minha Linha do Tempo</h1>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Março 2012</h3>
+                </div>
+                    <h2>Entrada na escola</h2>
+                    <p data-aos="fade-down">Aqui foi o ponto onde entrei na Escola Estadual de Ensino Médio Mariz e Barros, a escola que era mais perto de onde eu morava. E foi ali onde começou os meus interesses e os meus aprendizados sobre a vida.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="time">
+                        <h3>Abril 2016</h3>
+                    </div>
+                    <h2>Handebol</h2>
+                    <p data-aos="fade-down">Esse é um dos marcos mais importantes na minha vida, onde eu comecei a treinar handebol, uma vez que meus pais achavam que o uso em excesso do computador e da tecnologia poderia me fazer algum mal, por conta disso comecei a praticar um esporte, e aprender o conceito de ser um atleta, e a maioria do aprendizado que trago até hoje, foi por conta desse esporte.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Dezembro 2019</h3>
+                </div>
+                    <h2>Ensino Fundamental</h2>
+                    <p data-aos="fade-down">Por muitas vezes, eu acabava me perguntando o que eu queria da minha vida, e foi aqui, quando completei o Ensino Fundamental da escola, que eu finalmente decidi, eu quero ir para o ramo da tecnologia, eu quero ser a diferença, e poder ajudar o mundo de alguma forma, e que de preferencia, seja tecnologica.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Março 2020</h3>
+                </div>
+                    <h2>Pandemia</h2>
+                    <p data-aos="fade-down">Quando fecharam as escolas foi um panico total, ainda mais pelo tempo e pelos acontecimentos que estavamos vivendo. E eu tive o pensamento que todo adolescente teve, "Ainda bem que não tem aula", e foi ai que tudo realmente começou. Essa foi a época em que eu mais tive frente a frente com as telas, com as informações e com as tecnologias realmente. E nesse meio tempo de pandemia, consegui aprender muita coisa sobre tecnologia, porém, sempre superficiais.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Janeiro 2022</h3>
+                </div>
+                    <h2>Volta as aulas</h2>
+                    <p data-aos="fade-down">Depois de 2 anos enclausurado frente as telas, retornei as aulas presenciais, mas com aqueles mesmo objetivo que tinha anos atrás, "Eu quero ir para o ramo da tecnologia". E pra ser sincero, eu ainda não sabia para que área queria ir, ou o que eu realmente gostava, mas eu tinha esse objetivo, e se tem algo que o esporte me ensinou durante todos esses anos, é a seguinte, nunca desista dos seus objetivos, por mais longe que estejam, uma hora irá acontecer.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Agosto 2022</h3>
+                </div>
+                    <h2>Convite</h2>
+                    <p data-aos="fade-down">Em um dia qualquer de aula, chegaram duas mulheres na minha sala de aula para apresentar um curso, e que para a minha surpresa era um ótimo curso a primeira vista. Foi quando começaram a dar as informações, um curso de Programação Web Full Stack, completamente grátis e com total auxilio dos professores. Pra ser sincero, acho que foi ali onde começou de verdade toda essa jornada, e sem esse convite, eu nem estaria aqui para contar tudo isso agora.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Setembro 2022</h3>
+                </div>
+                    <h2>Inicio do Curso</h2>
+                    <p data-aos="fade-down">Esse mês foi um dos melhores meses, foi onde eu realmente tive toda a introdução a Programação, foi quando eu aprendi quais eram as linguagens, para o que elas serviam, e quais eram as suas importancias. Uma pessoa totalmente leiga, que a partir desse ponto ja estava apaixonado pela Programação, e disposto a se jogar de cabeça nisso tudo.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Dezembro 2022</h3>
+                </div>
+                    <h2>Ensino Médio</h2>
+                    <p data-aos="fade-down">Aqui é o momento onde encerramos mais um ciclo, onde acaba o momento de maior aprendizagem e formação de crianças até adolescente. Mas também o momento onde eu consigo dedicar mais tempo para o curso que acabou se tornando o meu principal foco.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Fevereiro 2023</h3>
+                </div>
+                    <h2>Retorno do recesso</h2>
+                    <p data-aos="fade-down">Do final de 2022 até o inicio de 2023 tivemos férias no curso, onde eu estudei bastante, aprendendo novas linguagens, dando inicio a conteudos e matérias que iriamos aprender no próximo ano, descobrindo um mar de infinidade de linguagens, linguagens de automação, linguagens para dispositivos, e também conhecendo outras áreas como a Programação de Jogos, Programação de Aplicativos, e também a área de UI/UX Design.</p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                <div class="time">
+                    <h3>Maio 2023</h3>
+                </div>
+                    <h2>Atualmente</h2>
+                    <p data-aos="fade-down">E aqui é o nosso ponto atual, onde me encontro agora, realizando o Portfólio, e estando lado a lado com a reta final do curso, onde eu já aprendi diversas coisas, fiz diversas amizades que levarei para a vida inteira, e me preparando para mais um desafio, o famoso TCC, onde colocarei todos meus conhecimentos em prática para finalizar essa jornada que foi o meu curso.</p>
+                </div>
+            </li>
+          
+
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+
+</main>
+
+
+
+<div class="titulo-container">
+
+ <h1 class="titulo">Skills</h1>
+
+</div>
+
+
+
+<main class="containersobre">
+
+   
+
+    <div class="flip-card" tabIndex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/html.png" alt="">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nivel de Habilidade</h3>
+
+            <br><br><br>
+
+            <div class="chart">
+                <div class="bar"></div>
+                <span id="value1">100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" tabIndex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/css.png" alt="">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nivel de Habilidade</h3>
+
+            <br><br><br>
+
+            <div class="chart">
+                <div class="bar"></div>
+                <span id="value2">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" tabIndex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/js.png" alt="">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nivel de Habilidade</h3>
+
+            <br><br><br>
+
+            <div class="chart">
+                <div class="bar"></div>
+                <span id="value1">60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" tabIndex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+           <img src="img/php.png" alt="">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nivel de Habilidade</h3>
+
+            <br><br><br>
+
+            <div class="chart">
+                <div class="bar"></div>
+                <span id="value1">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" tabIndex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+           <img src="img/mysql.png" alt="">
+          </div>
+          <div class="flip-card-back">
+
+            <h3>Nivel de Habilidade</h3>
+
+            <br><br><br>
+
+            <div class="chart">
+                <div class="bar"></div>
+                <span id="value1">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+
+function increase() {
+    // Change the variable to modify the speed of the number increasing from 0 to (ms)
+    let SPEED = 60;
+    // Retrieve the percentage value
+    let limit = parseInt(document.getElementById("value1").innerHTML, 10);
+
+    for(let i = 0; i <= limit; i++) {
+        setTimeout(function () {
+            document.getElementById("value1").innerHTML = i + "%";
+        }, SPEED * i);
+    }
+}
+
+increase();
+
+
+      </script>
+
+
+
+</main>
+
+    <script>
+        AOS.init();
+      </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+* {
+
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid ed;
+
+}
+
+@font-face {
+    font-family: intro;
+    src: url(fontes/Geomatrix\ Light.otf);
+}
+
+@font-face {
+    font-family: card;
+    src: url(fontes/Geomatrix\ Thin.otf);
+}
+
+body {
+
+    background-color: #000000;
+    
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+
+
+.logo {
+
+    width: 50px;
+    height: auto;
+
+}
+
+h1 {
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 2%
+}
+
+.linha {
+
+    width: 15%;
+    margin-left: 42.4%;
+
+
+}
+
+.intro {
+
+    color: white;
+    font-family: intro;
+    width: 60%;
+    margin-left: 22%;
+    font-size: 3vh;
+
+}
+
+.foto-1 {
+
+    width: 500px;
+    height: 500px;
+    border-radius: 800px;
+    background-image: url(p/crm.png);
+    background-position-x: 23%;
+    background-position-y: 100%;
+    background-size: 230%;
+
+}
+
+.foto-2 {
+
+    width: 500px;
+    height: 500px;
+    border-radius: 800px;
+    background-image: url(p/relogiodois.png);
+    background-position-x: 50%;
+    background-position-y: 50%;
+
+}
+
+.foto-3 {
+
+    width: 500px;
+    height: 500px;
+    border-radius: 800px;
+    background-image: url(p/tabuada.png);
+    background-position-x: 50%;
+    background-position-y: 75%;
+    background-size: 280%;
+
+}
+
+.foto-4 {
+
+    width: 500px;
+    height: 500px;
+    border-radius: 800px;
+    background-image: url(p/zodiaco.png);
+    background-position-x: 55%;
+    background-size: 100%;
+
+}
+
+
+.logo-header img {
+
+    width: 50px;
+    height: auto;
+
+
+}
+
+.header-container {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.itens-header img {
+
+    width: 30px;
+    height: 32px;
+
+}
+
+.itens-header2 img {
+
+    width: 30px;
+    height: 32px;
+    display: none;
+
+}
+
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 9%;
+
+
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+header {
+
+    width: 100vw;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+
+
+
+.img-card {
+
+    border-radius: 200px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-container {
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    cursor: default;
+    margin-bottom: 10%;
+
+}
+
+.card-sub-container {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+    margin-top: 5%;
+    cursor: default;
+
+}
+
+.card-sub-container p {
+
+width: 400px;
+text-align: justify;
+
+}
+
+.container-container {
+
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+
+}
+
+.intro {
+
+    font-family: intro;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#container-projeto {
+
+    margin-left: 12%;
+    margin-top: 5%;
+
+}
+
+.cursor {
+
+    cursor: default;
+
+}
+
+
+section.container {
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+}
+
+
+
+
+a:hover {
+    border-bottom: 0px solid #111;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+p {
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+#botoes:hover {
+    cursor: pointer
+}
+
+#botoes {
+    background: transparent;
+    outline: none;
+    position: relative;
+    border: 2px solid #ffffff;
+    padding: 15px 50px;
+    overflow: hidden;
+}
+
+
+#botoes:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+    
+}
+
+#botoes:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 1.1em;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in-out;
+
+    
+}
+
+#botoes:hover div {
+    opacity: 0;
+    transform: translate(100%, 0);
+    
+   
+}
+
+#botoes div {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    transition: all .3s ease-in-out;
+    
+}
+
+
+
+.dark-mode {
+
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+
+}
+
+.dark-mode .linha {
+
+    background-color: black;
+
+}
+
+.dark-mode p {
+
+    color: black;
+
+}
+
+.dark-mode h1 {
+
+    color: black;
+
+}
+
+.dark-mode h2 {
+
+    color: black;
+
+}
+
+.dark-mode h3 {
+
+    color: black;
+
+}
+
+.dark-mode .intro {
+
+    color: black;
+
+}
+
+.dark-mode #botoes {
+
+    border: 2px solid #000000;
+
+}
+
+.dark-mode #botoes div {
+
+
+    color: black;
+
+}
+
+.dark-mode #botoes:before {
+
+    color: black;
+
+}
+
+
+
+button {
+
+background-color: #00000000;
+border: none;
+cursor: pointer;
+
+}

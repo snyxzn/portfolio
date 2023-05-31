@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <script src="three.r134.min.js"></script>
+  <script src="vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#your-element-selector",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xffffff,
+      backgroundColor: 0x0,
+      points: 5.00,
+      maxDistance: 19.00,
+      spacing: 20.00
+    })
+  </script>
+
+  <link rel="icon" href="https://t3.ftcdn.net/jpg/03/68/95/08/360_F_368950850_aMW6C9P5SV7udFGHWgz97fvgNVsnOvpp.jpg">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Rodrigues | Portfólio </title>
+</head>
+
+<body>
+
+
+  <div class="header-container">
+
+    <header>
+
+    
+
+      <a href="#"><img src="img/log.png" alt=""></a>
+
+      <button class="view-modal">Contatos</button>
+      <div class="popup">
+
+
+        <div class="content">
+          <p>Minhas Redes Sociais</p>
+          <ul class="icons">
+            <a href="https://www.facebook.com/ricardo.rodriguesdasilva.56"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/snyxznn"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nz_rick/"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://wa.me/5551992262705?text=Ol%C3%A1%2C+eu+vim+redirecionado+por+conta+do+seu+portf%C3%B3lio."><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="mailto:ricardoempg@gmail.com"><i class="fab fa-linkedin" style="color: #0e76a8;"></i></a>
+          </ul>
+          <p>Ou veja meu linktree</p>
+          <div class="field">
+            <i class="url-icon uil uil-link"></i>
+            <input type="text" readonly value="https://linktr.ee/ricdeveloper">
+            <button>Copiar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    const viewBtn = document.querySelector(".view-modal"),
+      popup = document.querySelector(".popup"),
+      close = popup.querySelector(".close"),
+      field = popup.querySelector(".field"),
+      input = field.querySelector("input"),
+      copy = field.querySelector("button");
+
+    viewBtn.onclick = () => {
+      popup.classList.toggle("show");
+    }
+    close.onclick = () => {
+      viewBtn.click();
+    }
+
+    copy.onclick = () => {
+      input.select(); //select input value
+      if (document.execCommand("copy")) { //if the selected text copy
+        field.classList.add("active");
+        copy.innerText = "Copied";
+        setTimeout(() => {
+          window.getSelection().removeAllRanges(); //remove selection from document
+          field.classList.remove("active");
+          copy.innerText = "Copy";
+        }, 3000);
+      }
+    }
+  </script>
+
+
+
+
+  </div>
+
+  </header>
+
+
+
+  <div class="biblio">
+
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div> <!-- stats - count particles -->
+    <div class="count-particles"> <span class="js-count-particles"></span></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+
+  </div>
+
+  <script>
+
+    particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
+  </script>
+
+
+
+  <main class="main-container">
+
+    <div class="describe">
+
+      <span class="font-1">Olá Visitante &nbsp; &nbsp;</span>
+      <span class="font-2">seja muito bem vindo</span>
+
+    </div>
+
+    <div class="describe-2">
+
+      <span class="font-2">aqui irá conhecer quem sou &nbsp; &nbsp;</span>
+      <span class="font-1">e os meus trabalhos</span>
+
+
+    </div>
+
+
+    <div class="describe-3">
+
+
+      <a href="projetos.html" class="space">Veja os meus projetos</a>
+
+      <a href="sobre.html">Sobre Mim</a>
+
+
+    </div>
+
+
+
+    </section>
+
+
+
+  </main>
+
+
+  <footer><a href="mailto:ricardoempg@gmail.com">hello@ricdevloper.com</a> © Ricardo R. S. Todos Direitos Reservados
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+  </footer>
+
+  <script>
+
+    function showTime() {
+      var date = new Date();
+      var h = date.getHours(); // 0 - 23
+      var m = date.getMinutes(); // 0 - 59
+      var s = date.getSeconds(); // 0 - 59
+      var session = "AM";
+
+      if (h == 0) {
+        h = 12;
+      }
+
+      if (h > 12) {
+        h = h - 12;
+        session = "PM";
+      }
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+
+      var time = h + ":" + m + ":" + s + " " + session;
+      document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+
+      setTimeout(showTime, 1000);
+
+    }
+
+    showTime();
+
+  </script>
+
+
+<script src="https://kit.fontawesome.com/e725a2531a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

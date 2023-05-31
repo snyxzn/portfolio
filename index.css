@@ -1,0 +1,568 @@
+* {
+
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid rd;
+
+
+}
+
+@font-face {
+    font-family: fonte-inicio-1;
+    src: url(fontes/horizon_outlined.otf);
+}
+
+@font-face {
+    font-family: fonte-inicio-2;
+    src: url(fontes/josefin-sans-regular.ttf);
+}
+
+@font-face {
+    font-family: fonte-inicio-3;
+    src: url(fontes/Alpha-Regular.otf);
+}
+
+@font-face {
+    font-family: fonte-modal;
+    src: url(fontes/Questrial-Regular.ttf);
+}
+
+body {
+
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.header-container {
+
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    margin-bottom: 2%;
+
+}
+
+header {
+
+    width: 95vw;
+
+
+
+}
+
+
+
+
+a>img {
+
+    width: 50px;
+    height: auto;
+    margin-left: 2%;
+    margin-top: 1%;
+
+}
+
+footer {
+
+
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.342);
+    bottom: 2%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10%;
+
+
+
+}
+
+footer>a {
+
+    color: rgba(255, 255, 255, 0.342);
+
+}
+
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 80vw;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff62;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 7px;
+
+
+
+}
+
+.main-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22vh;
+
+
+}
+
+.container-menu {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.second-main.container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.describe {
+
+    color: white;
+    position: absolute;
+
+}
+
+.describe-2 {
+
+    color: white;
+    margin-top: 7%;
+    position: absolute;
+}
+
+.describe-3 {
+
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    font-family: fonte-inicio-3;
+    margin-top: 15%;
+    font-size: 25px;
+
+}
+
+
+
+.font-1 {
+
+    font-family: fonte-inicio-1;
+    font-size: 40px;
+
+}
+
+.font-2 {
+
+    font-family: fonte-inicio-2;
+    font-size: 40px;
+
+}
+
+.space {
+
+    margin-right: 10%;
+    margin-left: 20%;
+
+}
+
+.describe-3>a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.describe-3>a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.describe-3>a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::selection {
+    color: #ffffff;
+    background: #7d2ae8;
+}
+
+.view-modal,
+.popup {
+    position: absolute;
+    left: 51.5%;
+}
+
+button {
+
+    top: -40;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: background 0.1s linear, border-color 0.1s linear, color 0.1s linear;
+}
+
+.view-modal {
+
+    display: flex;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 25px;
+    background: #000000;
+    transform: translate(-50%, -50%);
+    margin-top: -25px;
+}
+
+.popup {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    top: -150%;
+    max-width: 380px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: top 0s 0.2s ease-in-out,
+        opacity 0.2s 0s ease-in-out,
+        transform 0.2s 0s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+}
+
+.popup.show {
+    top: 35%;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0s 0s ease-in-out,
+        opacity 0.2s 0s ease-in-out,
+        transform 0.2s 0s ease-in-out;
+
+}
+
+.popup :is(header, .icons, .field) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebedf9;
+}
+
+.header-modal span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.header-modal .close,
+.icons a {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-modal .close {
+    color: #878787;
+    font-size: 17px;
+    background: #f2f3fb;
+    height: 33px;
+    width: 33px;
+    cursor: pointer;
+}
+
+.header-modal .close:hover {
+    background: #ebedf9;
+}
+
+.popup .content {
+    margin: 20px 0;
+}
+
+.popup .icons {
+    margin: 15px 0 20px 0;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.content .icons a {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.icons a i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons a:nth-child(1) {
+    color: #1877F2;
+    border-color: #b7d4fb;
+}
+
+.icons a:nth-child(1):hover {
+    background: #1877F2;
+}
+
+.icons a:nth-child(2) {
+    color: #46C1F6;
+    border-color: #b6e7fc;
+}
+
+.icons a:nth-child(2):hover {
+    background: #46C1F6;
+}
+
+.icons a:nth-child(3) {
+    color: #e1306c;
+    border-color: #f5bccf;
+}
+
+.icons a:nth-child(3):hover {
+    background: #e1306c;
+}
+
+.icons a:nth-child(4) {
+    color: #25D366;
+    border-color: #bef4d2;
+}
+
+.icons a:nth-child(4):hover {
+    background: #25D366;
+}
+
+.icons a:nth-child(5) {
+    color: #0e76a8;
+    border-color: #0e76a8;
+}
+
+.icons a:nth-child(5):hover {
+    background: #69a1e0;
+}
+
+.icons a:hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+.icons a:hover i {
+    transform: scale(1.2);
+}
+
+.content .field {
+    margin: 12px 0 -5px 0;
+    height: 45px;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.field.active {
+    border-color: #7d2ae8;
+}
+
+.field i {
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.field.active i {
+    color: #7d2ae8;
+}
+
+.field input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.field button {
+    color: #fff;
+    padding: 5px 18px;
+    background: #7d2ae8;
+}
+
+.field button:hover {
+    background: #8d39fa;
+}
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+
+
+#particles-js {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: auto;
+
+
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+
+    background: #00000000;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #000000;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+
+    font-size: 1.1em;
+
+}
+
+#stats,
+.count-particles {
+
+    -webkit-user-select: none;
+
+    margin-top: 5px;
+
+    margin-left: 5px;
+}
+
+#stats {
+
+    border-radius: 3px 3px 0 0;
+
+    overflow: hidden;
+}
+
+.count-particles {
+
+    border-radius: 0 0 3px 0px;
+
+}
+
+@media (max-width: 1368px) {
+
+    .footer {
+
+        text-align: center;
+        margin-right: 15%;
+
+    }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+
+        overflow-x: visible;
+        overflow-y: none;
+
+    }
+
+    .describe-3 {
+
+        margin-top: 50%;
+
+    }
+
+    footer {
+
+        font-size: 15px;
+        margin-top: 30%;
+        margin-right: 22%;
+
+    }
+
+
+
+
+}
+
+button {
+
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+
+}
+
